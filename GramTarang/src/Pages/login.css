@@ -1,0 +1,64 @@
+/* 
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  font-size: 30px;
+  text-align: center;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.flex-item-left {
+  background-color: transparent;
+  padding: 10px;
+  font-size: large;
+}
+
+.flex-item-right {
+  background-color: transparent;
+  padding: 10px;
+}
+
+/* Responsive layout - makes a one column-layout instead of two-column layout */
+.glow{
+    animation: blink-animation 1s steps(5, start) infinite;
+    -webkit-animation: blink-animation 1s steps(5, start) infinite;
+  }
+  @keyframes blink-animation {
+    to {
+      visibility: hidden;
+    }
+  }
+  @-webkit-keyframes blink-animation {
+    to {
+      visibility: hidden;
+    }
+  }
+  .flex-container {
+    display: flex;
+    flex-direction: row;
+  }
+  .btn:hover, .btn:focus{
+    opacity: 0.8;
+  }
+  .cardbody_1{
+    width: "450px";
+  }
+@media (max-width: 1040px) {
+  .flex-container {
+    flex-direction: column;
+  }
+  .cardbody_1{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 450px;
+  }
+} 
